@@ -19,9 +19,16 @@ repositories {
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
-    providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+
     testImplementation("org.assertj:assertj-core:3.25.3")
+
+    implementation("org.springframework.data:spring-data-jdbc:3.2.3")
+
+    implementation("com.h2database:h2:2.2.224")
+
+    providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
+
 
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 
